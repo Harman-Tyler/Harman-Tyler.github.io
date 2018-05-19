@@ -8,7 +8,7 @@
   </head>
   <body>
       <header>
-          <img src="" width="100" height="100" alt="WeatherVane Logo">
+          <img src="/images/WeatherVaneLogo.jpg" width="100" height="100" alt="WeatherVane Logo">
           <h1>WeatherVane</h1>
           <div class="subheading">
           <h3>Weather the Storm!</h3>
@@ -16,21 +16,40 @@
       </header>
       <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="franklin-4.html">Franklin</a></li>
-            <li><a href="About.html">About Us</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Chaser</a></li>
+            <li><a href="#">Gallery</a></li>
           </ul>
       </nav>
       <main>
-          <h2>CIT 230 - Assignment Portal</h2> 
-          <ul>
-              <li>Lesson 1: <a href="https://harman-tyler.github.io/basicpage.html">My Basic Page</a></li>
-              <li>Lesson 2: <a href="#">Semantic HTML and Basic CSS Styling</a></li>
-              <li>Lesson 3: <a href="https://harman-tyler.github.io/assignments/lesson-3/fixedhtml.html">Fixed HTML</a></li>
-          </ul>
+          <h2>Franklin</h2> 
+          <section id="WeatherData">
+            <h3>Weather Data</h3>
+              <p> Weather data will go here.</p>
+          </section>
+          <section id="10Day">
+            <h3>10 Day Forecast</h3>
+              <p>Here's your 10-day forecast.</p>
+          </section>
+          <img src="/images/FranklinStorm.jpg">
+          <section id="CityArticle">
+            <h3>Franklin County Fair Opens This Week</h3>
+              <p>Amazing article about the Franklin County Fair.</p>
+          </section>
       </main>
       <footer>
-          <p>&copy; Tyler Harman || Utah ||  <a href="http://www.byui.edu/online">Byu-Idaho Online Learning</a></p>
+          <aside>
+              <p>WeatherVane.com<br>
+                 123 Main St.<br>
+                 Anytown, USA 12345<br>
+                 (999) 999-9999<br>
+                 Joebob@weathervane.com 
+              </p>
+          </aside>
+          <p class="footer-bar">&copy; WeatherVane &#124;&#124; <span id="currentdate"></span>Current Date</p>
       </footer>
   
   </body>

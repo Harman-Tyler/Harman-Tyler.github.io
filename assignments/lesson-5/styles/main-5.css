@@ -1,0 +1,109 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt');
+body, nav {
+  font-family: Arial, sans-serif; 
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 960px;
+  margin: auto;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+h1, h2, h3{
+    font-family: 'Rock Salt', Papyrus, cursive;
+}
+header {
+    background-color: #bfd7ea;
+    height: 100px;
+    align-content: center;
+}
+header h1 {
+    color: #878787;
+}
+header img {        /* I'm working on a better logo*/
+    float: left;
+    padding-right: 20px;
+}
+header .subheading {
+    color: #878787;
+}
+
+nav {
+    background-color: darkgray;
+    text-align: center;
+    font-size: 25p
+    padding: 2px;
+    
+}
+nav button {
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+     display: inline;
+    border-right: 1px solid #a9e190;
+}
+li:last-child {
+        border-right: none;
+}
+nav ul li a {
+    color: floralwhite;
+    padding: 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+}
+nav ul li a:hover {
+    background-color: #bfd7ea;
+}
+main {
+   color: dimgray;
+    text-align: center;
+    padding: 1em;
+    position: relative; 
+}
+.weather-summary {
+    background-color: #a9e190;
+    padding: 1em;
+}
+picture {
+    float: right;
+}
+.forecast {
+    display: none;
+    padding: 1em;
+}
+main h2 {
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+table , th, td {
+    border: 2px solid #a9e190;
+    border-collapse: collapse;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.articleHead {
+   text-align: center;
+    color: dimgray;
+    padding: 1em; 
+}
+footer > section {
+    background-color: #bfd7ea;
+    color: dimgray;
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+}

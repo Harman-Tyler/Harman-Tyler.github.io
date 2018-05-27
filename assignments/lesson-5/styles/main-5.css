@@ -1,9 +1,4 @@
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt');
+* { box-sizing: border-box;}  
 body, nav {
   font-family: Arial, sans-serif; 
 }
@@ -34,7 +29,7 @@ header .subheading {
 nav {
     background-color: darkgray;
     text-align: center;
-    font-size: 25p
+    font-size: 20px;
     padding: 2px;
     
 }
@@ -95,12 +90,7 @@ table , th, td {
     margin-left: auto;
     margin-right: auto;
 }
-.articleHead {
-   text-align: center;
-    color: dimgray;
-    padding: 1em; 
-}
-footer > section {
+footer {
     background-color: #bfd7ea;
     color: dimgray;
     text-align: center;

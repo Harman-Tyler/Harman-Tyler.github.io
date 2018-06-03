@@ -65,13 +65,16 @@ main {
     padding: 1em;
     position: relative; 
 }
-.weather-summary {
+main.weather-summary {
     background-color: #a9e190;
     padding: 1em;
 }
-picture {
+main.weather-summary figure.weathericon {
+    width: 50%;
+    margin: 0 0 0 2%; 
     float: right;
 }
+main.weather-summary figure.weathericon img {width: 100%;}
 .forecast {
     display: none;
     padding: 1em;

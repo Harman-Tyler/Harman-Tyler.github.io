@@ -1,19 +1,24 @@
-* { box-sizing: border-box;}  
-body, nav {
+* { 
+    box-sizing: border-box;
+}  
+
+body {
+  font-size: 14px;
   font-family: Arial, sans-serif; 
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 960px;
-  margin: auto;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+header, nav, main, footer { 
+  max-width: 1280px;
+  margin: 0 auto;
 }
+
 h1, h2, h3{
-    font-family: 'Rock Salt', Papyrus, cursive;
+    font-family: 'Pacifico', cursive;
 }
 header {
     background-color: #bfd7ea;
-    height: 100px;
-    align-content: center;
+    padding: 1rem 0 1rem 0;
+    overflow: auto;
 }
 header h1 {
     color: #878787;

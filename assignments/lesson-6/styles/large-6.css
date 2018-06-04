@@ -1,4 +1,113 @@
 @media only screen and (min-width: 64em) {
+  header h1 h2 {
+        font-size: 4rem;
+    }
     
+     
+    main {
+        position: relative;
+        clear: both;
+        padding: 0;
+    }
+    main figure {
+        float: none;
+        width: 100%;  
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+     main figure img {
+        margin: 0;
+        width: 100%;
+
+    }
+    
+    .town-header {
+        margin: 0.5rem 2%;
+    }
+  
+    nav ul li {   
+        font-size: 1.5rem;
+    }
+    
+    .forecast {
+        font-size: 1.25em;
+    
+    }
+      .current {
+        
+        width: 33.3%;
+        margin: 0;
+        padding:4.5% 0 4.5% 1%;
+        
+    }
+    .current img {
+        width: 60%;
+        margin-left: 0;
+    }
+    
+    .weather-summary div {
+        float: left;
+    }
+    
+    #status {
+        width: 40%;
+        font-size: 1.5em;
+        padding: 1.25em 0;
+    }
+    
+    .hi-low { 
+        margin: 0;
+        width: 33.3%;  
+        font-size: 1.5rem;
+        padding: 7% 0% 7% 10%;
+    }
+    
+    .temp {
+        width: 70%;
+        padding:  3% 0;
+        
+    }
+        
+    .condition {
+        
+        width: 33.3%;
+        margin: 0;        
+        font-size: 1.5rem;
+        padding: 8% 2%;
+    
+    }
+    
+    .cur-con {
+        width: 100%;
+        padding: 0;
+    }
+    
+
+    .town-article {
+         font-size: 1.25rem;
+    }
+    
+    .contact{
+         font-size: 1.15rem;
+    }
+    
+    .weather-summary h3, .news-story h3, .forecast h3{
+        font-size: 1.75rem;
+        border-width: 0.1rem;
+        border-top: none;
+    }
+    
+    .forecast-table th, .forecast-table td{
+        border-width: 0.1rem;
+    }
+    
+     .weather-summary, .news-story, .forecast {
+        border-width: 0.1rem;
+    }
+    
+    
+  }  
   
   }

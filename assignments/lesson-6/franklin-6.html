@@ -4,52 +4,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Franklin Weather - Local Weather and More &verbar; WeatherVane</title>
-    <meta name="description" content="Up to the minute weather for Franklin, USA.">
+    <meta name="description" content="Up to the minute weather, news, and more for Franklin, Greenville, and Springfield, USA. Get it all here at WeatherVane.com!">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main-5.css">
-    <link rel="stylesheet" href="styles/medium-5.css">
-    <link rel="stylesheet" href="styles/large-5.css">
+    <link rel="stylesheet" href="styles/main-6.css">
+    <link rel="stylesheet" href="styles/medium-6.css">
+    <link rel="stylesheet" href="styles/large-6.css">
 </head>
 <body>
     
-  <header>
+  <header  class="clearfix">
       <figure class="logo">
-        <img src="/images/WeatherVaneLogo.jpg" alt="WeatherVane Logo">
+      <img src="images/logo0.png" alt="WeatherVane Logo"
+             srcset="images/logo1.png 1x,
+             images/logo2.png 2x,
+             images/logo3.png 3x">
       </figure>
       <h1>WeatherVane</h1>
-      <div class="subheading">
-        <h3>Weather the Storm!</h3>
-      </div>
-  </header>
+      <h2>Weather the Storm!</h2>
+  </header> 
 
-  <nav>
-    <ul>
-    	<li><a href="#">Home</a></li>
-    	<li><a href="#">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
-    	<li><a href="#">Storm Center</a></li>
-    	<li><a href="#">Gallery</a></li>
-    </ul>		
+  <nav class="clearfix">
+      <button id="HambugerButton" onclick="toggleMenu();">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+    	   <li><a href="#">Home</a></li>
+    	   <li><a href="#">Franklin</a></li>
+    	   <li><a href="#">Greenville</a></li>
+    	   <li><a href="#">Springfield</a></li>
+    	   <li><a href="#">Storm Center</a></li>
+    	   <li><a href="#">Gallery</a></li>
+        </ul>		
   </nav>
     
-  <main>
-    <h2>Franklin</h2>
+  <main class="clearfix">
+      <figure class="franklin">
+          <img src="images/franklin-ps6.jpg" alt="Franklin countryside" sizes="50vw" 
+                 srcset="images/franklin250.jpg 250w, 
+                         images/franklin500.jpg 500w,
+                         images/franklin800.jpg 800w, 
+                         images/franklin1200.jpg 1200w">
+      </figure>
+      
+      <div class="town-name">
+        <h2>Franklin</h2>
+      </div>
+          
     <section class="weather-summary">
-      <h3>Weather Summary</h3>
+      <h2>Current Conditions</h2>
       <div class="current">
-        <figure>
-            <img class="weathericon" src="images/SunIcon.png" alt="Sunny Weather Icon">
-        </figure>
-        <p>Sunny</p>
-        <p>High: 89&deg;F</p>  
-        <p>Low: 65&deg;F</p>  
+          <p id="status">Sunny</p>
+      </div>
+        <div class="hi-low">
+            <p class="temp">High: 89&deg;F</p>  
+            <p class="temp">Low: 65&deg;F</p>  
       </div>  
       <div class="conditions">
-        <p>Precipitation: 0&percnt;</p>  
-        <p>Wind Speed: 5 mph NE</p>  
-      </div>           
-    </section>
+            <p class="condition">Precipitation: 0&percnt;</p>  
+            <p class="condition">Wind Speed: 5 mph NE</p>  
+      </div>
+          </section>
         
     <section class="forecast">
       <h3>Ten Day Forecast</h3>
@@ -86,8 +99,8 @@
     </section>
       
     <article>
-      <h3>Franklin Breaks Record</h3>  
-      <img class="artpic" src="images/SunsetScaled.jpg" alt="Sunset in the countryside.">
+      <h3>Franklin Breaks Record</h3>
+      <img src="images/FranklinStorm.jpg" alt="storm">
       <p class="town-article">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien dui, lobortis sit amet aliquam nec, congue ac enim. Aenean maximus tincidunt metus, et feugiat nisi dignissim a. Praesent venenatis, lectus finibus aliquet hendrerit, purus libero commodo dui, sed iaculis ante nisl sed dolor. Nulla faucibus ut dui in auctor. Nam ultricies hendrerit massa ultrices suscipit. Sed sit amet nisi commodo, mollis arcu vitae, pellentesque elit. Sed consequat blandit fringilla. Maecenas eget purus ligula. Fusce tortor leo, bibendum posuere felis sit amet, bibendum tristique quam. Integer vel erat convallis dui bibendum eleifend. Phasellus a turpis erat. Quisque ut ex ullamcorper, pellentesque leo a, imperdiet ex. Aliquam id ornare dolor. Suspendisse a sem mi.
       </p>
@@ -96,15 +109,20 @@
   </main>
     
   <footer>
-    <p>
-      Contact Us<br>
-      123 Main St. Anytown, US 99999<br>
-      999.999.9999<br>
-      Google Map<br>
-    </p>
-    <p>&copy;2018 | All Rights Reserved | WeatherVane.com | <span id="currentdate">Current Date Placeholder</span>
-    </p>
+        <aside>
+            <section class="contact">
+                <h4>Contact Us</h4>
+                <p class="contact-info">123 Main St.</p>
+                <p class="contact-info">Franklin, US 99999</p>
+                <p class="contact-info">999.999.9999</p>
+                <p class="contact-info">joebob@weathervane.com</p>
+            </section>
+            <p class="footer-bar">
+                &copy;2018 | All Rights Reserved | WeatherVane.com | <span id="currentdate">Current Date</span>
+            </p>
+            </aside>
   </footer>
-
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
 </body>
 </html>

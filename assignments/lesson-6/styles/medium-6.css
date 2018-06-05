@@ -18,24 +18,25 @@
         padding: 0 0 0 5%;
     }
     
-     nav button {
-    float: left;
-    background-color: transparent;
-    border: none;
-    width: 1.8rem;
-    font-size: 1.6rem;
-    color: #ffffff;
-    text-align: center;
-    padding: 0;
+    nav ul li {
+        float: left;
+        width: 16.66666667%;
+        display: inline;
+    border-right: 1px solid #a9e190;
 }
-
-nav button:hover, nav button:focus {
-            color: #bfd7ea;
-            border: none;
+li:last-child {
+        border-right: none;
+}
+    
+    
+     nav ul li a{   
+        font-size: 1.1rem;
+        border-top: none;
+         
     }
     
     nav ul.hide {
-        display: inline; 
+        display: block; 
     }
     
     main {

@@ -9,7 +9,7 @@ body {
 
 header, nav, main, footer { 
   max-width: 1200px;
-  margin: 0 aut
+  margin: 0 auto;
 }
 
 header {
@@ -37,6 +37,7 @@ nav {
 }
 nav button {
     float: left;
+    display: block;
     background-color: transparent;
     border: none;
     width: 1.8rem;
@@ -61,17 +62,14 @@ nav ul {
 nav ul.hide {
     display:none;
 }
-nav ul li {
-     display: inline;
-    border-right: 1px solid #a9e190;
-}
-li:last-child {
-        border-right: none;
-}
+
 nav ul li a {
+    display: block;
     color: floralwhite;
-    padding: 16px;
+    padding: .8rem 0;
     text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
 }
 nav ul li.active a {
 }

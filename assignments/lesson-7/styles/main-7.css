@@ -1,37 +1,44 @@
-* { 
+* {
     box-sizing: border-box;
-}  
-
-body {
-  font-size: 16px;
-  font-family: Arial, sans-serif; 
 }
 
-header, nav, main, footer { 
-  max-width: 1280px;
-  min-width: 380px;
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 1280px;
+    min-width: 380px;
+    margin: 0 auto;
 }
 
 header {
-    display:flex;
+    display: flex;
     flex-direction: row wrap;
     padding: .5rem 2%;
     background-color: #bfd7ea;
 }
 
-header figure.logo {        /* I'm working on a better logo*/
-    margin-right: 20%; 
+header figure.logo {
+    /* I'm working on a better logo*/
+    margin-right: 20%;
 }
- .site-heading {
+
+.site-heading {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin:
-    
 }
 
 
-header h1, h2, h3{
+header h1,
+h2,
+h3 {
     font-family: 'Pacifico', cursive;
     color: #878787;
     text-align: center;
@@ -52,9 +59,9 @@ nav button {
 }
 
 nav button:hover, nav button:focus {
-            color: #bfd7ea;
-            border: none;
-    }
+    color: #bfd7ea;
+    border: none;
+}
 
 nav ul {
     list-style-type: none;
@@ -66,19 +73,21 @@ nav ul {
 nav ul li a {
     display: flex;
     color: floralwhite;
+    justify-content: center;
     padding: .8rem 0;
     text-decoration: none;
     text-align: center;
     font-size: 1rem;
 }
-nav ul li.active a {
-}
+
+nav ul li.active a {}
+
 nav ul li a:hover {
     background-color: dimgrey;
 }
 
 nav ul.hide {
-    display:none;
+    display: none;
 }
 
 main {
@@ -88,18 +97,18 @@ main {
     background-color: #a9e190;
 }
 
-main h2,h3 {
+main h2,
+h3 {
     align-content: center;
     font-weight: bold;
-    width: 96%
-    margin: 2% auto;
-    
+    width: 96% margin: 2% auto;
+
 }
 
 main figure img {
     width: 100%;
-    height:auto;
-   padding: 0;
+    height: auto;
+    padding: 0;
 }
 
 .grid {
@@ -134,59 +143,63 @@ main figure img {
 }
 
 
-section.weather-summary, section.forecast, article {
-        position: relative;
-        border-style: solid;
-        border-color: #000000;
-        border-width: 0.05rem;
-        margin: 1em 2%;
-        overflow: auto;
-    }
+section.weather-summary,
+section.forecast,
+article {
+    position: relative;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0.05rem;
+    margin: 1em 2%;
+    overflow: auto;
+}
 
-    .weather-summary img {
-        width: 4em;
-        float: right;
-        border-radius: 50%;
-        margin: 0.75em 0;
-    }
+.weather-summary img {
+    width: 4em;
+    float: right;
+    border-radius: 50%;
+    margin: 0.75em 0;
+}
 
-    .current {
-        width: 7em;
-        margin: 0 auto;
-        overflow: auto;
-    }
+.current {
+    width: 7em;
+    margin: 0 auto;
+    overflow: auto;
+}
 
-    .hi-low {
-        width: 13em;
-        margin: 0 auto;
-        overflow: auto;
-    }
+.hi-low {
+    width: 13em;
+    margin: 0 auto;
+    overflow: auto;
+}
 
-    .temp{
-        float: left;
-        width: 6em;
-        margin: 0 0 0 0.5em;
-        padding: 0 0.5em;
-    }
+.temp {
+    float: left;
+    width: 6em;
+    margin: 0 0 0 0.5em;
+    padding: 0 0.5em;
+}
 
-    .condition p{
-       margin: 0 0.5em;
-    }
-
-
-    .conditions{
-        width: 12em;
-        margin: 1em auto;
-        overflow: auto;
-    }
-
-    section.forecast {
-        display: none;
-        clear: both;
-    }
+.condition p {
+    margin: 0 0.5em;
+}
 
 
-table , th, td {
+.conditions {
+    width: 12em;
+    margin: 1em auto;
+    overflow: auto;
+}
+
+section.forecast {
+    display: none;
+    clear: both;
+}
+
+
+table,
+th,
+td {
     background-color: #bfd7ea;
     border: 2px solid #878787;
     border-collapse: collapse;
@@ -198,17 +211,17 @@ table , th, td {
     margin-right: auto;
 }
 
-article img{
+article img {
     width: 50%;
     float: right;
     padding: 2%
 }
 
 .town-article {
-            font-size: 1em;
-            width: 96%;
-            margin: 2%;
-    }
+    font-size: 1em;
+    width: 96%;
+    margin: 2%;
+}
 
 footer {
     background-color: #bfd7ea;
@@ -217,6 +230,7 @@ footer {
     font-size: .75rem;
     padding: 2px;
 }
+
 .clearfix:after {
     content: "";
     display: table;

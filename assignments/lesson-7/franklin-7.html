@@ -57,12 +57,13 @@
           <p id="status">Sunny</p>
       </div>
         <div class="hi-low">
-            <p class="temp">High: 89&deg;F</p>  
-            <p class="temp">Low: 65&deg;F</p>  
+            <p class="temp">High: <span id="max-temp">89&deg;F</span></p>  
+            <p class="temp">Low: <span id="min-temp">65&deg;F</span></p>  
       </div>  
       <div class="conditions">
             <p class="condition">Precipitation: 0&percnt;</p>  
-            <p class="condition">Wind Speed: 5 mph NE</p>  
+            <p class="condition">Wind Speed: <span id="wind-speed">5mph NW</span></p>
+            <p class="condition">Wind Chill: <span id="wind-chill"></span>&deg;</p>
       </div>
           </section>
         
@@ -126,5 +127,6 @@
   </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

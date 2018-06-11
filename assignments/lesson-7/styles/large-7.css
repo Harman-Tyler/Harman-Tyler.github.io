@@ -23,6 +23,15 @@
         font-size: 1.5rem;
     }
     
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: .2em;
+    }
+    .grid figure:hover {
+        box-shadow: .6rem .6rem 3rem rgba(0, 0, 0, 0.7);
+    }
+    
     .forecast {
         font-size: 1.25em;
     

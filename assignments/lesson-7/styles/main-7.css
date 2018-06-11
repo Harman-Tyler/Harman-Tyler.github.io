@@ -74,7 +74,7 @@ nav ul li a {
 nav ul li.active a {
 }
 nav ul li a:hover {
-    background-color: #bfd7ea;
+    background-color: dimgrey;
 }
 
 nav ul.hide {
@@ -101,6 +101,38 @@ main figure img {
     height:auto;
    padding: 0;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    width: 98%;
+    margin: 1em;
+
+
+}
+
+.grid figure {
+    width: 100%;
+    margin: .1%;
+}
+
+.grid img {
+    width: 100%;
+    padding: .1rem;
+    margin: .1rem;
+}
+
+.grid figcaption {
+    text-align: center;
+    padding: .6rem;
+}
+
+.grid p {
+    text-align: left;
+    font-size: 1em;
+}
+
 
 section.weather-summary, section.forecast, article {
         position: relative;

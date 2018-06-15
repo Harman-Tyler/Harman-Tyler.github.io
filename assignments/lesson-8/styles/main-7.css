@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 1280px;
+    min-width: 380px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row wrap;
+    padding: .5rem 2%;
+    background-color: #bfd7ea;
+}
+
+header figure.logo {
+    /* I'm working on a better logo*/
+    margin-right: 20%;
+}
+
+.site-heading {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:
+}
+
+
+header h1,
+h2,
+h3 {
+    font-family: 'Pacifico', cursive;
+    color: #878787;
+    text-align: center;
+}
+
+nav {
+    background-color: darkgray;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    width: 1.8rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+}
+
+nav button:hover, nav button:focus {
+    color: #bfd7ea;
+    border: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: flex;
+    color: floralwhite;
+    justify-content: center;
+    padding: .8rem 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+nav ul li.active a {}
+
+nav ul li a:hover {
+    background-color: dimgrey;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    position: relative;
+    color: #878787;
+    padding: 0.5rem 0 0;
+    background-color: #a9e190;
+}
+
+main h2,
+h3 {
+    align-content: center;
+    font-weight: bold;
+    width: 96% margin: 2% auto;
+
+}
+
+main figure img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    width: 98%;
+    margin: 1em;
+
+
+}
+
+.grid figure {
+    width: 100%;
+    margin: .1%;
+}
+
+.grid img {
+    width: 100%;
+    padding: .1rem;
+    margin: .1rem;
+}
+
+.grid figcaption {
+    text-align: center;
+    padding: .6rem;
+}
+
+.grid p {
+    text-align: left;
+    font-size: 1em;
+}
+
+
+section.weather-summary,
+section.forecast,
+article {
+    position: relative;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0.05rem;
+    margin: 1em 2%;
+    overflow: auto;
+}
+
+.weather-summary img {
+    width: 4em;
+    float: right;
+    border-radius: 50%;
+    margin: 0.75em 0;
+}
+
+.current {
+    width: 7em;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.hi-low {
+    width: 13em;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.temp {
+    float: left;
+    width: 6em;
+    margin: 0 0 0 0.5em;
+    padding: 0 0.5em;
+}
+
+.condition p {
+    margin: 0 0.5em;
+}
+
+
+.conditions {
+    width: 12em;
+    margin: 1em auto;
+    overflow: auto;
+}
+
+section.forecast {
+    display: none;
+    clear: both;
+}
+
+
+table,
+th,
+td {
+    background-color: #bfd7ea;
+    border: 2px solid #878787;
+    border-collapse: collapse;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article img {
+    width: 50%;
+    float: right;
+    padding: 2%
+}
+
+.town-article {
+    font-size: 1em;
+    width: 96%;
+    margin: 2%;
+}
+
+footer {
+    background-color: #bfd7ea;
+    color: dimgray;
+    text-align: center;
+    font-size: .75rem;
+    padding: 2px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -32,25 +32,77 @@
             <li><a href="franklin-7.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
-            <li><a href="#">Storm Center</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     
     <main>
-        <section class="homegrid">
-            <div class="topgrid">
-                <article>
-                    <h2>Placeholder Weather Story</h2>
-                    <p><em>Franklin, USA.</em>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada commodo ex non tristique. Suspendisse fermentum dui at porta dapibus. Cras ultrices quam arcu, et aliquam lectus posuere vel. In scelerisque a velit sed sollicitudin. Sed posuere sodales tortor, non tempus velit consectetur ac. In eu diam risus. Quisque et nulla nunc. Sed molestie aliquet mi, eu sodales magna dictum ac. Phasellus ipsum lacus, condimentum a auctor sed, porttitor at ligula. Vivamus dictum justo vel mauris varius malesuada. Aliquam maximus elit id commodo pharetra. Aenean eu erat sit amet metus laoreet volutpat quis sed magna. Nunc mi magna, lobortis eu pulvinar id, convallis vitae nulla. Proin pellentesque imperdiet lectus. Donec et elit ex.</p>
-                </article>
-            </div>
-            <div class="topgrid">
-                <figure>
-                    <img src="images/rain-field.jpg" alt="rain over field">
-                </figure>
-            </div>
-        </section>
+         <section class="homegrid">
+          <div class="homegriditem">
+              <figure>
+                  <img src="images/weather4.jpg" alt="Lightning and clouds">
+                  <figcaption>Storms brewing over Springfield</figcaption>
+              </figure>
+          </div>
+          <div class="homegriditem">
+              <article>
+                  <h2>Tornadoes touch down north of Clark County</h2>
+                  <p><em>Franklin, OH (AP) —</em> Residents in the northern part of Clark County awoke to tumultuous skies overhead as cold and warm fronts went to battle with each other Tuesday morning, causing the perfect conditions for tornado activity. Around 10:30 AM, the skies could hold back no longer and the first of three tornadoes touched down just 8 miles north of Springfield, Ohio.</p>
+              </article>
+          </div>
+      </section>
+    <section class="current-weather-panels">
+      <a href="franklin.html" class="city-panel">
+      <div class="panel">
+        <div class="leftcolumn"><img src="images/franklin2.jpg" alt="Downtown Franklin"></div>
+        <div class="rightcolumn">
+            <aside class="city-data">
+                <h3 id="city1-name"></h3><br>
+                <strong>Motto:</strong> <span id="city1-motto"></span><br>
+                <strong>Founded:</strong> <span id="city1-founded"></span><br>
+                <strong>Population:</strong> <span id="city1-population"></span><br>
+                <strong>Avg. Rainfall:</strong> <span id="city1-rainfall"></span> inches<br><br>
+                <strong>Upcoming Events:</strong><br><span id="franklin-events"></span>
+            </aside>
+        </div>
+      </div>
+      </a>
+    </section>
+    <section class="current-weather-panels">
+      <a href="#" class="city-panel">
+      <div class="panel">
+        <div class="leftcolumn"><img src="images/greenville.jpg" alt="Rural Greenville"></div>
+        <div class="rightcolumn">
+            <aside class="city-data">
+                <h3 id="city2-name"></h3><br>
+                <strong>Motto:</strong> <span id="city2-motto"></span><br>
+                <strong>Founded:</strong> <span id="city2-founded"></span><br>
+                <strong>Population:</strong> <span id="city2-population"></span><br>
+                <strong>Avg. Rainfall:</strong> <span id="city2-rainfall"></span> inches<br><br>
+                <strong>Upcoming Events:</strong><br><span id="greenville-events"></span>
+            </aside>
+        </div>
+      </div>
+      </a>
+    </section>
+    <section class="current-weather-panels">
+      <a href="#" class="city-panel">
+      <div class="panel">
+        <div class="leftcolumn"><img src="images/springfield.jpg" alt="Sunset in Springfield"></div>
+        <div class="rightcolumn">
+            <aside class="city-data">
+                <h3 id="city3-name"></h3><br>
+                <strong>Motto:</strong> <span id="city3-motto"></span><br>
+                <strong>Founded:</strong> <span id="city3-founded"></span><br>
+                <strong>Population:</strong> <span id="city3-population"></span><br>
+                <strong>Avg. Rainfall:</strong> <span id="city3-rainfall"></span> inches<br><br>
+                <strong>Upcoming Events:</strong><br><span id="springfield-events"></span>
+            </aside>
+        </div>
+      </div>
+      </a>
+    </section>on>
     </main>
 
 
@@ -73,9 +125,7 @@
         </aside>
     </footer>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/slider.js"></script>
-    
+    <script src="scripts/currentdate.js"></script> 
+    <script src="scripts/towndata.js"></script>
 </body>
 </html>

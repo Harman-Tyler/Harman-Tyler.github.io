@@ -200,7 +200,10 @@ form label.top input:required:valid {
     font-size: 1em;
 }
 
-section.homegrid {display:flex-inline;}
+.topgrid {
+    display:flex-inline;
+    a
+}
 
 
 section.weather-summary,

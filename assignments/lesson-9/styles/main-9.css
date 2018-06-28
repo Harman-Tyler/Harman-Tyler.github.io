@@ -5,6 +5,8 @@
 body {
     font-size: 16px;
     font-family: Arial, sans-serif;
+    border: 2px dimgray; 
+    
 }
 
 header,
@@ -12,13 +14,14 @@ nav,
 main,
 footer {
     max-width: 1280px;
-    min-width: 380px;
+    min-width: 450px;
     margin: 0 auto;
+    box-shadow: 0px 5px 5px gray;
 }
 
 header {
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: row;
     padding: .5rem 2%;
     background-color: #bfd7ea;
 }
@@ -32,7 +35,6 @@ header figure.logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:
 }
 
 
@@ -92,8 +94,6 @@ nav ul.hide {
 
 main {
     position: relative;
-    color: #878787;
-    padding: 0.5rem 0 0;
     background-color: #fff;
 }
 
@@ -101,7 +101,7 @@ main h2,
 h3 {
     align-content: center;
     font-weight: bold;
-    width: 96% margin: 2% auto;
+    width: 96%; margin: 2% auto;
 
 }
 
@@ -137,8 +137,8 @@ form label.top input, form label.top select {
     font-size: 1rem;
     border: solid 1px #999;
     border-radius: 4px;
-    padding.75rem;
-    color: #555 opacity: .8;
+    padding: .75rem;
+    color: #555; opacity: .8;
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
@@ -175,8 +175,6 @@ form label.top input:required:valid {
     grid-gap: 1em;
     width: 98%;
     margin: 1em;
-
-
 }
 
 .grid figure {
@@ -200,64 +198,83 @@ form label.top input:required:valid {
     font-size: 1em;
 }
 
-.topgrid {
-    display:flex-inline;
-    a
+.homegrid  {
+  display:flex;
+    flex:1;
+   align-items:center;
+justify-content:center; 
 }
+
+.homegrid .homegriditem {
+    justify-content: center;
+    width:50%;
+    font-size: 20px;
+}
+
+.homegrid .homegriditem img {
+    mi
+}
+
+.townpanel {padding:20px 30px 20px 30px; background:#EEF1EE;}
+.townpanel {padding:20px 30px 30px 30px;}
+.townpanel .panel {display:inline-flex; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); transition: all .3s ease-in-out;}
+.townpanel .panel:hover {box-shadow:0 0px 30px rgba(0,0,0,0.3); cursor:pointer;}
+.townpanel .panel .leftcolumn {flex:100%; min-height:200px;}
+.townpanel .panel .leftcolumn img {width:75%; height:100%; object-fit:cover;}
+.townpanel .panel .rightcolumn {flex:50%;}
+.townpanel .panel .rightcolumn aside {padding:20px;}
+.townpanel a.city-panel {text-decoration: none; color:inherit;}
 
 
 section.weather-summary,
 section.forecast,
 article {
+    display:flex;
     position: relative;
     border-style: solid;
-    border-color: #000000;
-    border-width: 0.05rem;
+    border-color: #a9e190;
+    border-width: 2px;
+    border-radius: 1rem;
     margin: 1em 2%;
-    overflow: auto;
 }
 
+.weather-summary {
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    font-size: 1em;
+    padding: .1em;
+    margin: 0 1% 0;
+}
 .weather-summary img {
-    width: 4em;
-    float: right;
-    border-radius: 50%;
-    margin: 0.75em 0;
+    margin-right: 100px;
+}
+.weather-summary h2 {
+    text-align: center;
+    margin-left: 25%;
+    padding: .2em;
+}
+.weather-summary {
+    display: none;
 }
 
-.current {
-    width: 7em;
-    margin: 0 auto;
-    overflow: auto;
+.current .iconDescription {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: .5rem 0 0;
 }
 
-.hi-low {
-    width: 13em;
-    margin: 0 auto;
-    overflow: auto;
-}
-
-.temp {
-    float: left;
-    width: 6em;
-    margin: 0 0 0 0.5em;
-    padding: 0 0.5em;
-}
-
-.condition p {
-    margin: 0 0.5em;
-}
-
-
-.conditions {
-    width: 12em;
-    margin: 1em auto;
-    overflow: auto;
+.iconDescription {
+    margin-top: auto;
 }
 
 section.forecast {
     display: none;
     clear: both;
 }
+
+
 
 
 table,
@@ -274,10 +291,16 @@ td {
     margin-right: auto;
 }
 
+p {
+    margin-left: 2%;
+}
+
+article {
+    display:inline-block;
+}
+
 article img {
-    width: 50%;
-    float: right;
-    padding: 2%
+    float:right;
 }
 
 .town-article {
@@ -290,8 +313,16 @@ footer {
     background-color: #bfd7ea;
     color: dimgray;
     text-align: center;
+}
+
+footer .contact-info {
     font-size: .75rem;
     padding: 2px;
+}
+
+footer .footer-bar {
+    background-color: #8B9DAB;
+    width: 96%;
 }
 
 .clearfix:after {

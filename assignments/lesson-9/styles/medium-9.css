@@ -46,6 +46,19 @@
         margin: .1rem;
 
     }
+    
+    .homegrid {
+        display:flex;
+    }
+    
+    .townpanel .panel {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .townpanel .panel .leftcolumn .rightcolumn {
+        flex:1;
+    }
 
     main {
         position: relative;

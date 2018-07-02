@@ -1,0 +1,103 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    nav button {
+        display: none;
+    }
+
+    section.forecast {
+        display: block;
+    }
+
+    header h1 h2 {
+        font-size: 2rem;
+        width: 75%;
+    }
+
+    header figure.logo {
+        padding: 0 0 0 5%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    nav ul.hide {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        border-top: none;
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: .1rem;
+
+    }
+    
+    .homegrid {
+        display:flex;
+    }
+    
+    .townpanel .panel {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .townpanel .panel .leftcolumn .rightcolumn {
+        flex:1;
+    }
+
+    main {
+        position: relative;
+        clear: both;
+        padding: 0;
+    }
+
+    main figure img {}
+
+    .town-header {
+        margin: 0 2%;
+    }
+
+    .current {
+        width: 100%;
+    }
+
+    #status {
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .temp {
+        display: block;
+        float: none;
+    }
+
+    article img {
+        float: right;
+        width: 50%;
+        padding: 0;
+        margin: 1em;
+    }
+
+    .town-article {
+        width: 96%;
+        margin: 1em auto;
+        font-size: 1rem;
+    }
+
+}

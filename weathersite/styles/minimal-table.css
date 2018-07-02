@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/*
+#7fb9c2 head and footer
+#628ca6 column head and highlighted cell
+#e7f0ed gray cells
+#e7ffed green cells
+#e1e7e5 cell border
+*/
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(190,190,190);
+  font-size: 1rem;
+  box-shadow: 10px 10px 10px rgb(137,173,199);
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 7.5px 7.5px;
+}
+
+th {
+  background-color: #7fb9c2;
+}
+
+td {
+  text-align: center;
+}
+
+
+tr:nth-child(even) td .white {
+  background-color: #e7ffed ;
+}
+
+tr:nth-child(odd) td {
+  background-color: #e7f0ed;
+}
+
+tfoot {
+    font-size: .75em;
+    background-color: #7fb9c2;
+}
+.white {
+    background-color: #628ca6;
+    color: white;
+}

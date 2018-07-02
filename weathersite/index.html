@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather - Local Weather and More &verbar; WeatherVane</title>
+    <meta name="description" content="Up to the minute weather, news, and more for Franklin, Greenville, and Springfield, USA. Get it all here at WeatherVane.com!">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/logo0.png" alt="WeatherVane Logo" srcset="images/logo1.png 1x,
+             images/logo2.png 2x,
+             images/logo3.png 3x">
+        </figure>
+        <div class="site-heading">
+            <h1>WeatherVane</h1>
+            <h2>Weather the Storm!</h2>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button id="HambugerButton" onclick="toggleMenu();">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+         <section class="homegrid">
+          <div class="homegriditem">
+              <figure>
+                  <img src="images/rain-field.jpg" alt="Storm over Fields">
+                  <figcaption>Much needed rain on the way</figcaption>
+              </figure>
+          </div>
+          <div class="homegriditem">
+              <article>
+                  <h2>Here Comes the Rain</h2>
+                  <p><em>Franklin, USA —</em> Summer is in full effect, and the heat, combined with a lack of rain for the last month, has led to extremely dry conditions.The wait is over, however, as the town of Franklin received much needed moisture from the first big storm of summer.</p>
+              </article>
+          </div>
+      </section>
+    <section class="townpanel">
+      <a href="franklin.html" class="city-panel">
+      <div class="panel">
+        <div class="leftcolumn"><img src="images/franklin-aerial.jpg" alt="Aerial shot of Franklin"></div>
+        <div class="rightcolumn">
+            <aside class="city-data">
+                <h3 id="city1-name"></h3><br>
+                <strong>Motto:</strong> <span id="city1-motto"></span><br>
+                <strong>Founded:</strong> <span id="city1-founded"></span><br>
+                <strong>Population:</strong> <span id="city1-population"></span><br>
+                <strong>Avg. Rainfall:</strong> <span id="city1-rainfall"></span> inches<br><br>
+                <strong>Upcoming Events:</strong><br><span id="town-events"></span>
+            </aside>
+        </div>
+      </div>
+      </a>
+    </section>
+    <section class="townpanel">
+      <a href="#" class="city-panel">
+      <div class="panel">
+        <div class="leftcolumn"><img src="images/child-gardening.jpg" alt="A small child gardening"></div>
+        <div class="rightcolumn">
+            <aside class="city-data">
+                <h3 id="city2-name"></h3><br>
+                <strong>Motto:</strong> <span id="city2-motto"></span><br>
+                <strong>Founded:</strong> <span id="city2-founded"></span><br>
+                <strong>Population:</strong> <span id="city2-population"></span><br>
+                <strong>Avg. Rainfall:</strong> <span id="city2-rainfall"></span> inches<br><br>
+                <strong>Upcoming Events:</strong><br><span id="town-events"></span>
+            </aside>
+        </div>
+      </div>
+      </a>
+    </section>
+    <section class="townpanel">
+      <a href="#" class="city-panel">
+      <div class="panel">
+        <div class="leftcolumn"><img src="images/balloons.jpg" alt="Hot air ballons over Springfield"></div>
+        <div class="rightcolumn">
+            <aside class="city-data">
+                <h3 id="city3-name"></h3><br>
+                <strong>Motto:</strong> <span id="city3-motto"></span><br>
+                <strong>Founded:</strong> <span id="city3-founded"></span><br>
+                <strong>Population:</strong> <span id="city3-population"></span><br>
+                <strong>Avg. Rainfall:</strong> <span id="city3-rainfall"></span> inches<br><br>
+                <strong>Upcoming Events:</strong><br><span id="town-events"></span>
+            </aside>
+        </div>
+      </div>
+      </a>
+    </section>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <aside>
+            <section class="contact">
+                <h4>Contact Us</h4>
+                <p class="contact-info">123 Main St.</p>
+                <p class="contact-info">Franklin, US 99999</p>
+                <p class="contact-info">999.999.9999</p>
+                <p class="contact-info">joebob@weathervane.com</p>
+            </section>
+            <p class="footer-bar">
+                &copy;2018 | All Rights Reserved | WeatherVane.com | <span id="currentdate">Current Date</span> || Weather data provided by <a href="https://openweathermap.org/"> OpenWeatherMap.org</a>
+            </p>
+        </aside>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script> 
+    <script src="scripts/towndata.js"></script>
+</body>
+</html>

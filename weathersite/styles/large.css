@@ -35,8 +35,6 @@
 
     }
     .current {
-
-        width: 33.3%;
         margin: 0;
         padding: 4.5% 0 4.5% 1%;
 
@@ -46,9 +44,6 @@
         margin-left: 0;
     }
 
-    .weather-summary div {
-        float: left;
-    }
 
     #status {
         width: 40%;

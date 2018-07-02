@@ -1,4 +1,6 @@
 @media only screen and (min-width: 37.5em) {
+    
+    
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     nav button {
@@ -48,11 +50,15 @@
     }
     
     .homegrid {
-        display:flex;
+        flex-direction: row;
+    }
+    
+    .homegriditem {
+        width:50%;
     }
     
     .townpanel .panel {
-        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
     
@@ -72,9 +78,7 @@
         margin: 0 2%;
     }
 
-    .current {
-        width: 100%;
-    }
+
 
     #status {
         width: 100%;

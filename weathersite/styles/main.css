@@ -202,6 +202,7 @@ form label.top input:required:valid {
 
 .homegrid  {
   display:flex;
+    flex-direction: column;
     flex:1;
    align-items:center;
 justify-content:center; 
@@ -209,17 +210,16 @@ justify-content:center;
 
 .homegrid .homegriditem {
     justify-content: center;
-    width:50%;
     font-size: 20px;
 }
 
 
 .townpanel {padding:20px 30px 20px 30px; background:#EEF1EE;}
 .townpanel {padding:20px 30px 30px 30px;}
-.townpanel .panel {display:inline-flex; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); transition: all .3s ease-in-out;}
+.townpanel .panel {display:flex; flex-direction: column; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); transition: all .3s ease-in-out;}
 .townpanel .panel:hover {box-shadow:0 0px 30px rgba(0,0,0,0.3); cursor:pointer;}
-.townpanel .panel .leftcolumn {flex:100%; min-height:200px;}
-.townpanel .panel .leftcolumn img {width:75%; height:100%; object-fit:cover;}
+.townpanel .panel .leftcolumn {flex:50%; min-height:200px;}
+.townpanel .panel .leftcolumn img {width:100%; height:100%; object-fit:cover;}
 .townpanel .panel .rightcolumn {flex:50%;}
 .townpanel .panel .rightcolumn aside {padding:20px;}
 .townpanel a.city-panel {text-decoration: none; color:inherit;}
@@ -229,7 +229,7 @@ section.weather-summary,
 section.forecast,
 article {
     display:flex;
-    position: relative;
+    flex-direction: column;
     border-style: solid;
     border-color: #a9e190;
     border-width: 2px;
@@ -246,26 +246,32 @@ article {
     margin: 0 1% 0;
 }
 .weather-summary img {
-    margin-right: 100px;
 }
 .weather-summary h2 {
     text-align: center;
-    margin-left: 25%;
     padding: .2em;
 }
 .weather-summary {
     display: none;
 }
 
-.current .iconDescription {
+.weather-summary .weather {
     display: flex;
+}
+
+.current  {
     justify-content: center;
     align-content: center;
     padding: .5rem 0 0;
+    text-transform: capitalize;
 }
 
 .iconDescription {
+    text-transform: capitalize;
     margin-top: auto;
+}
+iconDescription figure {
+    margin: 0;
 }
 
 section.forecast {
@@ -314,6 +320,12 @@ footer {
     text-align: center;
 }
 
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    padding:0 10px 10px;
+}
+
 footer .contact-info {
     font-size: .75rem;
     padding: 2px;
@@ -321,7 +333,7 @@ footer .contact-info {
 
 footer .footer-bar {
     background-color: #8B9DAB;
-    width: 96%;
+    padding: 10px;
 }
 
 .clearfix:after {

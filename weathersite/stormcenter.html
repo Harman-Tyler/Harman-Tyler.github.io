@@ -17,9 +17,11 @@
 
     <header class="clearfix">
         <figure class="logo">
+            <a href="index.html">
             <img src="images/logo0.png" alt="WeatherVane Logo" srcset="images/logo1.png 1x,
              images/logo2.png 2x,
              images/logo3.png 3x">
+            </a>
         </figure>
         <div class="site-heading">
             <h1>WeatherVane</h1>
@@ -32,8 +34,8 @@
         <ul id="primaryNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
-            <li><a href="#">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -116,19 +118,21 @@
         <aside>
             <section class="contact">
                 <h4>Contact Us</h4>
-                <p class="contact-info">123 Main St.</p>
-                <p class="contact-info">Franklin, US 99999</p>
-                <p class="contact-info">999.999.9999</p>
-                <p class="contact-info">joebob@weathervane.com</p>
+                <div class="contact-info">123 Main St.<br />
+                 Franklin, US 99999<br />
+                 999.999.9999<br />
+                 joebob@weathervane.com
+                </div>
             </section>
-            <p class="footer-bar">
-                &copy;2018 | All Rights Reserved | WeatherVane.com | <span id="currentdate">Current Date</span>
-            </p>
+            <div class="footer-bar">
+                &copy;2018 | All Rights Reserved | WeatherVane.com | <span id="currentdate">Current Date</span> || Weather data provided by <a href="https://openweathermap.org/"> OpenWeatherMap.org</a>
+            </div>
         </aside>
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/wayfinding.js"></script>
 </body>
 
 </html>

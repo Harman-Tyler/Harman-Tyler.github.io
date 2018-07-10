@@ -6,13 +6,16 @@
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="styles/style.css">
 	//<script src="scripts/jquery-2.2.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 	<script>
 		$(function () {
 			// All jQuery code goes here
+        //40%opacity logo, blue border request a quote, red background color quote boxes, white what we do
+        //bold core values and add 2, add footer links, add request a quote header and light bulb, a
 
-			$('input[name !="phoneNum"]').css('border', '1px solid red');
-
+		//$('input[name$="Val"]').css('border', '1px solid red');
+           //$('#alcoveLogo').next().css('background-color', 'rgba(255,0,0,0.2)'); 
+            $('.servicesBtn').closest('div').css('background-color', 'rgba(255,0,0,0.2)');
 			
 		})
 	</script>
@@ -41,7 +44,7 @@
 			<!-- Get a Free Quote Form -->
 			<div class="registerForm">
 				<form id="GetAQuoteForm">
-					<img class="ReqAQuoteImg" src="img/quote.png" alt="">
+					<img class="ReqAQuoteImg" src="images/quote.png" alt="">
 					<br>
 					<div class="FormFieldHolder">
 						<div class="labelHolder">
@@ -117,9 +120,9 @@
 				<div class="boxes box3">
 					<h2>Our Work</h2>
 					<hr>
-					<a href="#" class="showcaseBtn"><img src="img/websites.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/mobileapps.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/webapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/websites.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/mobileapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/webapps.jpg" alt=""></a>
 					<select name="showcaseOthers" id="showcaseOthers">
 						<option value="01">UI/UX Design</option>
 						<option value="02">Big Data Implementation</option>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Spoke Events &verbar; Mountain Bike Races and Events in Bozeman, MT</title>
+    <meta name="description" content="Want to hit the trails with like-minded individuals? Check out our events in beautiful Bozeman, MT.">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <figure class="logo">
+            <a href="index.html">
+            <img src="images/logo2.png" alt="Mountain Spoke Logo" >
+            </a>
+        </figure>
+    </header>
+
+    <nav class="clearfix">
+        <button id="HambugerButton" onclick="toggleMenu();">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <figure class="hero">
+            <img src="images/event-banner.jpg" alt="tour through mountains on bikes" sizes="50vw" srcset="images/event-banner@0,5x.jpg 600w,
+                     images/event-banner@0,75x.jpg 896w, 
+                     images/event-banner.jpg 1200w">
+        </figure>
+
+        <section class="tour-grid">
+            <!--2 columns, image and text-->
+            <figure>
+                <img src="images/Great_Divide_AaronTeasdale.jpg" alt="riders taking a ski lift" 100vw, 50vw>
+            </figure>
+            <article class="tour">
+                <h2>Cycle the GreatContinental Divide</h2>
+                <p>..Or at least a portion of it... Since most of us don't have time to ride all 2100 glorious miles of the Great Divide Mountain Bike Route (GDMRB), we figure we can at least do a portion of it.Our annual 'Cycle the Continental Divide' event spans the 2nd portion of the GDMRB, from Roosville to Helena, MT (371.1 mi.), and begins Monday, August 6 2018, and goes for approximately 5 days.</p>
+                
+                <p>Beginning at the Canadian border and heading south to Helena, Montana, you are in the deep woods and steep mountains near Glacier National Park and the Bob Marshall Wilderness. This area is native to grizzly bear, elk, moose, mountain lion, thick woods, and has some difficult climbing.</p> 
+                
+                <p>Montana is characterized by mountainous riding in tall forests with occasional dips into small towns. It is also noted for its friendly people. The capital city in Montana, Helena, has less than 40,000 people and a nice small-town feel to it. The other big town along the route is Butte, which has a definite blue-collar, mining flavor. Montana also has the toughest downhill on the route — nicknamed "thermarest hill" for all the thermarests it has eaten. Even the hardiest riders have to walk this one.</p>
+            </article>
+            
+            <figure>
+                <img src="images/ridge-bike.jpg" alt="riding the ridge" 100vw, 50vw>
+            </figure>
+            <article class="tour">
+                <h2>Details</h2>
+                <p>Access to the GDMRB is open to the public, so there is no entrance fee for our event. We just think it's fun to get out there with people who love to ride. </p>
+                <p>Most of this route is extremely remote, with no access to towns or shops. You'll need to bring a bike trailer that will store your food, water, extra clothes, and campling supplies. We're setting up some waystations to provide repair services and accessories along the way. We'll also have some medical personnel with us at camp each night.</p>
+                <h3>Pricing</h3>
+                <ul>
+                    <li>$200/person</li>
+                    <li>Includes free bike repair, medical attention, and shuttle back from the race.</li>
+                </ul>
+            </article>
+        </section>
+
+        <h1>Registration</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>
+                    <h2>Contact Information</h2>
+                </legend>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z]{5,20}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                <label class="top" for="bday">Enter your birthday: <input type="date" id="bday" name="bday"></label>
+                <br><br>
+                <legend>
+                    <h2>Special Accomodations/Comments</h2>
+                </legend>
+                <label class="top"><textarea rows="10" cols="50" placeholder="Comments"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Report This Storm" class="submitBtn">
+
+        </form>
+
+    </main>
+
+    <footer>
+        &copy;2018 | All Rights Reserved | Mountain Spoke | <span id="currentdate">Current Date  </span>| Logo made with <a href="https://www.designevo.com/en/" title="Free Online Logo Maker">DesignEvo</a>
+        <div></div>
+
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

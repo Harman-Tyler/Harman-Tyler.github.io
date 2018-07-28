@@ -9,6 +9,14 @@
         grid-template-columns: 1.6fr .75fr 1.5fr .85fr;  
     }
     
+     .tour-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin:2%;
+    }
+    
+    
     footer {
         font-size: 1rem;
         word-spacing: 2.5px;

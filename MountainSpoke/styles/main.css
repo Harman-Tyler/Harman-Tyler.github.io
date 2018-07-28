@@ -14,7 +14,8 @@ header {
 }
 
 h1,
-h2, h3 {
+h2,
+h3 {
     font-family: 'Titillium Web', sans-serif;
     color: #2a97e7;
 }
@@ -31,6 +32,7 @@ main figure img {
     height: auto;
     padding: 0;
 }
+
 img {
     max-width: 100%;
     margin: 0 0 10px 0;
@@ -182,7 +184,6 @@ article.content {
 }
 
 .grid-2 iframe {
-    justify-items: center;
     margin: auto;
     padding: 2%;
 }
@@ -213,30 +214,33 @@ form legend {
     padding: 0 .5rem;
 }
 
-form label.top, form div {
+form label.top,
+form div {
     display: block;
     padding-top: 1rem;
     color: #326771;
     font-size: .8rem;
-    
+
 }
 
-form label.top input, form label.top select {
+form label.top input,
+form label.top select {
     display: block;
     font-size: 1rem;
     border: solid 1px #326771;
     border-radius: 4px;
     padding: .75rem;
-    color: #555; opacity: .8;
+    color: #555;
+    opacity: .8;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 form label.sbs {
-    display:block;
+    display: block;
     padding: .75rem 0;
-    color: #28464b;  
+    color: #28464b;
 }
 
 form input.submitBtn {
@@ -259,6 +263,46 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: #56e52b solid 6px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #326771;
+    font-size: 1rem;
+    box-shadow: 10px 10px 10px rgb(137, 173, 199);
+    margin-top: 3%;
+}
+
+td,
+th {
+    border: 1px solid #326771;
+    padding: 7.5px 7.5px;
+}
+
+th.topp {
+    background-color: #7bb7b7;
+    color: floralwhite;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1.2px;
+}
+
+td {
+    text-align: center;
+}
+
+
+tr:nth-child(even) td .white {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(odd) td {
+    background-color: #e7f0ed;
+}
+
+tfoot {
+    font-size: .75em;
+    background-color: #326771;
+    color: floralwhite;
 }
 
 

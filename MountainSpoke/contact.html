@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Spoke Events &verbar; Mountain Bike Races and Events in Bozeman, MT</title>
+    <meta name="description" content="Want to hit the trails with like-minded individuals? Check out our events in beautiful Bozeman, MT.">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <figure class="logo">
+            <a href="index.html">
+            <img src="images/logo2.png" alt="Mountain Spoke Logo" >
+            </a>
+        </figure>
+    </header>
+
+    <nav class="clearfix">
+        <button id="HambugerButton" onclick="toggleMenu();">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <figure class="hero">
+            <img src="images/tour-banner.jpg" alt="tour through mountains on bikes" sizes="50vw" srcset="images/tour-banner@0,5x.jpg 600w,
+                     images/tour-banner@0,75x.jpg 896w, 
+                     images/tour-banner.jpg 1200w">
+        </figure>
+
+        <section class="tour-grid">
+            <!--2 columns, image and text-->
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611056!2d-111.09290618363507!3d45.67227287910391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532402299111" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <article class="tour">
+                <h2>Questions or Concerns?</h2>
+                <p>Whether you've got questions, concerns, or even complaints, we love hearing from our customers. Let us know how we can best serve you.</p>
+                <p>
+                3950 Valley Commons Drive<br />
+                 Bozeman, MT 59718<br />
+                 999.999.9999<br />
+                 joebob@mountainspoke.com
+                </p> 
+                <p>We've been in business for over 25 years because we love to ride, and we love sharing that passion with you, our amazing customers. Thanks for your support and business. Here's to the next 25 years!</p>
+            </article>
+
+        </section>
+
+        <form method="get" action="thanks2.html">
+            <fieldset>
+                <legend>
+                    <h2>Contact Information</h2>
+                </legend>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z]{5,20}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+
+                    <h2>How Can We Serve you?</h2>
+                <label class="top"><textarea rows="10" cols="50" placeholder="Comments"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Get Help" class="submitBtn">
+
+        </form>
+
+    </main>
+
+    <footer>
+        &copy;2018 | All Rights Reserved | Mountain Spoke | <span id="currentdate">Current Date  </span>| Logo made with <a href="https://www.designevo.com/en/" title="Free Online Logo Maker">DesignEvo</a>
+        <div></div>
+
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

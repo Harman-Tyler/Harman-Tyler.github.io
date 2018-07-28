@@ -1,0 +1,17 @@
+@media only screen and (min-width: 64em) {
+
+    nav ul li {
+        flex: auto;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1.6fr .75fr 1.5fr .85fr;  
+    }
+    
+    footer {
+        font-size: 1rem;
+        word-spacing: 2.5px;
+    }
+
+}
